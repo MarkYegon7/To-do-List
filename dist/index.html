@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+<script defer src="runtime.js"></script><script defer src="bundle.js"></script></head>
+<script src="bundle.js"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <section id="entire-page">
+        <div class="todo-page">
+            <h3>Today's To Do</h3>
+            <img src="./assets/sync.png" alt="sync-image">
+            <hr>
+        </div>
+
+        <div id="add-task">
+        <input type="text" id="task-input" placeholder="Enter a new task">
+        <button id="add-button">Add Task</button>
+        <hr>
+        </div>
+        
+        <ul id="todo-list"></ul>
+
+        <button id="clear-button">Clear All Completed</button>
+    </section>
+
+</body>
+</html>

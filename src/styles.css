@@ -1,0 +1,43 @@
+#entire-page {
+  border: 2px solid grey;
+  padding: 1% 1% 1% 1%;
+  width: 40%;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+#task-input {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+  font-size: 23px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + span.task-description {
+  text-decoration: line-through;
+}
+
+#todo-list {
+  padding: 0;
+}
+
+#clear-button {
+  width: 100%;
+  height: 4vh;
+  color: hsl(0deg 0% 13% / 71%);
+  font-size: 14px;
+}
