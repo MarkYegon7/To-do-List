@@ -13,7 +13,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    bundle: './src/index.js',
+    bundle: './src/core.js',
   },
   devServer: {
     static: './dist',
