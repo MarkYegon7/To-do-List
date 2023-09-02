@@ -3,6 +3,7 @@ import { renderTasks } from './render.js';
 import {
   addTask, setTasks, getTasks,
 } from './taskManager.js';
+import { clearCompletedTasks } from './statusManager.js'; // Import the new functions
 
 function updateLocalStorage() {
   localStorage.setItem('tasks', JSON.stringify(getTasks())); // Update localStorage with all tasks
@@ -14,10 +15,8 @@ function initializeApp() {
   const clearButton = document.getElementById('clear-button');
 
   clearButton.addEventListener('click', () => {
-    const tasks = getTasks(); // Clear tasks
-    tasks.length = 0;
-    updateLocalStorage();
-    renderTasks();
+    clearCompletedTasks(); // Call the new function to clear completed tasks
+    renderTasks(); // Update the task list after clearing completed tasks
   });
 
   addTaskButton.addEventListener('click', () => {
