@@ -36,6 +36,7 @@
 - Add tasks
 - Cancels tasks through list
 - Remove tasks from the list
+- Delete completed tasks
 
 ## 🛠 Built With <a name="built-with"></a>
 
